@@ -1,0 +1,410 @@
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-image: url('../img/wavestyle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-size: initial;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+div#wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+div#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    background-color: black;
+}
+
+div#uithetbakje {
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 999;
+    text-align: center;
+}
+
+div#hetfeitelijkebakje {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20vh;
+    width: 360px;
+    padding: 10px;
+}
+
+div#uithetbakje div#drankbakje img {
+    border-top: 10px solid #ccc;
+    border-left: 10px solid #bbb;
+    border-bottom: 10px solid #888;
+    border-right: 10px solid #999;
+}
+
+div#uithetbakje div#geldbakje img {
+    height: 88px;
+    width: 88px;
+    margin: 1px;
+}
+
+div#uithetbakje div#errormsg {
+    box-sizing: border-box;
+    width: 340px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #900;
+    color: #900;
+    background-color: #fcc;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.125em;
+}
+
+div#uithetbakje p {
+    box-sizing: border-box;
+    margin: 0;
+    width: 340px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ccf;
+    border: 1px solid #2d7c99;
+    border-radius: 10px;
+    background: #2d7c99; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #2d7c99 0%, #193b60 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2d7c99), color-stop(100%,#193b60)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #2d7c99 0%,#193b60 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #2d7c99 0%,#193b60 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #2d7c99 0%,#193b60 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #2d7c99 0%,#193b60 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7c99', endColorstr='#193b60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+div#uithetbakje p:hover {
+    background: #4d9cb9; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #4d9cb9 0%, #193b60 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2d7c99), color-stop(100%,#193b60)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #4d9cb9 0%,#193b60 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #4d9cb9 0%,#193b60 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #4d9cb9 0%,#193b60 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #4d9cb9 0%,#193b60 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d9cb9', endColorstr='#193b60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div#uithetbakje p a {
+    color: #eef;
+}
+
+header {
+    box-sizing: border-box;
+    width: 900px;
+    min-height: 14vh;
+    margin-bottom: 1vh;
+}
+
+header div {
+    float: left;
+}
+
+header div:nth-child(1) {
+    height: 12vh;
+    margin: 1vh 10px 1vh 0;
+    min-width: 120px;
+    background-color: #9bb3d6;
+    border-radius: 10px;
+}
+
+header div:nth-child(2) {
+    height: 12vh;
+    min-width: 90px;
+    margin: 1vh 10px 1vh 0;
+    background-color: #bdd5e8;
+    border-radius: 10px;
+}
+
+header div:nth-child(3) {
+    height: 12vh;
+    min-width: 60px;
+    margin: 1vh 10px 1vh 0;
+    background-color: #dff7fb;
+    border-radius: 10px;
+}
+
+header div:nth-child(4) {
+    font-family: 'Cuprum', sans-serif;
+    color: #effafd;
+    font-size: 12vh;
+    font-weight: bold;
+                }
+
+header div:nth-child(5) {
+    font-family: 'Cuprum', sans-serif;
+    color: #ffffff;
+    font-size: 12vh;
+    font-weight: bold;
+}
+
+section {
+    clear: both;
+    width: 720px;
+    height: 85vh;
+    float: left;
+}
+
+aside {
+    width: 180px;
+    padding-top: 15px;
+    float: right;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px #024;
+}
+
+div#placeholder {
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #caf;
+    color: #60c;
+    border: 1px solid #60c;
+    z-index: 100;
+}
+
+div#geldsaldo {
+    box-sizing: border-box;
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+}
+
+div#geldsaldo p:first-child {
+    box-sizing: border-box;
+    font-size: 32px;
+    font-weight: bold;
+    width: 158px;
+    position: relative;
+    border: 1px solid #900;
+    border-radius: 10px;
+    background-color: #fcc;
+    color: #900;
+    padding: 6px;
+    margin: 0 0 6px 0;
+    text-align: center;
+}
+
+div#geldsaldo p#wisselwarning {
+    box-sizing: border-box;
+    font-size: 1em;
+    width: 158px;
+    position: relative;
+    border: 1px solid #900;
+    border-radius: 10px;
+    background-color: #fcc;
+    color: #900;
+    padding: 6px;
+    margin: 6px 0 6px 0;
+    text-align: left;
+}
+
+div#geldsaldo form input[type="submit"] {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 60px;
+    width: 158px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: #900;
+    color: #fcc;
+    font-size: 1.5em;
+}
+
+div#geldsaldo form input[type="submit"]:hover {
+    background-color: #a22;
+    color: #fdd;
+}
+
+div#muntkeuze {
+    overflow: auto;
+    text-align: center;
+}
+div#muntkeuze form input[type="image"] {
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    opacity: 0.6;
+}
+div#muntkeuze form input[type="image"]:hover {
+    opacity: 1;
+}
+
+div#muntkeuze div.muntvol {
+    border-radius: 40px;
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 5px;background-color: red;
+}
+div#muntkeuze div.muntvol img {
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+div.drank {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px #024;
+}
+
+div.drank p {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+div.drank input[type="submit"] {
+    background: #cceecc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #cceecc 50%, #77aa77 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#cceecc), color-stop(100%,#77aa77)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #cceecc 50%,#77aa77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #cceecc 50%,#77aa77 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #cceecc 50%,#77aa77 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #cceecc 50%,#77aa77 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cceecc', endColorstr='#77aa77',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 220px;
+    height: 50px;
+    border: 1px solid #77aa77;
+    border-radius: 0px 0px 15px 15px;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #77aa77;
+}
+
+div.drank input[type="submit"]:hover {
+    background: #ddffdd; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ddffdd 50%, #99cc99 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#ddffdd), color-stop(100%,#99cc99)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ddffdd 50%,#99cc99 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ddffdd 50%,#99cc99 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ddffdd 50%,#99cc99 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ddffdd 50%,#99cc99 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddffdd', endColorstr='#99cc99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div.drank div.drankimage {
+    width: inherit;
+    background-color: black;
+    height: 150px;
+}
+
+div.drank div.geldwaardebutton {
+
+    width: inherit;
+    height: 40px;
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+    line-height: 40px;
+    font-size: 1.1em;
+    font-weight: normal;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 0px;
+    background: #121a3d; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #121a3d 0%, #193b60 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#121a3d), color-stop(100%,#193b60)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #121a3d 0%,#193b60 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #121a3d 0%,#193b60 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #121a3d 0%,#193b60 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #121a3d 0%,#193b60 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121a3d', endColorstr='#193b60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+div.drank div.moremoneybutton {
+    //background-color: #fc3;
+    background: #ffcc33; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ffcc33 50%, #cc6633 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#ffcc33), color-stop(100%,#cc6633)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ffcc33 50%,#cc6633 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ffcc33 50%,#cc6633 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ffcc33 50%,#cc6633 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ffcc33 50%,#cc6633 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc33', endColorstr='#cc6633',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #b52;
+    width: inherit;
+    height: 50px;
+    border: 1px solid #c63;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    line-height: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+div.drank div.unavailablebutton {
+    background: #ffcccc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ffcccc 50%, #cc6666 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#ffcccc), color-stop(100%,#cc6666)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ffcccc 50%,#cc6666 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ffcccc 50%,#cc6666 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ffcccc 50%,#cc6666 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ffcccc 50%,#cc6666 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcccc', endColorstr='#cc6666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #b55;
+    width: inherit;
+    height: 50px;
+    border: 1px solid #c66;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    line-height: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+clear {
+    clear: both;
+}
